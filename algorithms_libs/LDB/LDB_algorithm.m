@@ -1,0 +1,30 @@
+function runningtime = LDB_algorithm(dataname, img_dir,frame_range)
+    disp(['perform algorithm LDB on image dirname:' img_dir, ', frame range is:', num2str(frame_range)]);
+    ds_ratio = 1;
+    frame_st = frame_range(1);
+    frame_ed = frame_range(2);
+    ImData   = ReadImgFromDir(img_dir,ds_ratio,frame_st,frame_ed);
+    %CNNDir = '/home/sdb/zhangzhijun/codes/CD/low-rank/mod-library/algorithms_libs/LDB_pre/DnCNN-PyTorch/test';
+    %CNNData         =   ReadCNNMatFromDir(CNNDir,dataname);
+    %if size(CNNData,3) > (frame_ed - frame_st + 1)
+    %    CNNData = CNNData(:,:,1:(frame_ed-frame_st+1));
+    %end
+    CNNData         =   zeros(size(ImData));
+    %mask_dir       = fullfile('/home/sdb/zhangzhijun/codes/CD/low-rank/mod-library/algorithms_libs/LDB_pre/deeplab-Res',dataname);
+    %MaskData        =    ReadMaskFromDir(mask_dir,size(ImData,1),size(ImData,2),frame_st,frame_ed);
+    MaskData         =   zeros(size(ImData));
+    opt.delta0 = 30;
+    tic;
+    [LowRank,Mask,tau,info,E,C] = ObjDetection_LDB_3D(ImData,CNNData,MaskData,opt);
+    runningtime = toc;
+    
+    resdir = fullfile('./results/LDB/',dataname,'/');  
+    if (~exist(resdir,'dir'))
+        mkdir(resdir);
+    end
+    
+    for i = 1:size(ImData,3)
+        filename = [resdir,'/bin' ,num2str(i+frame_st-1,'%06d'),'.png'];
+        imwrite(mat2gray(Mask(:,:,i)),filename);  
+    end
+end
