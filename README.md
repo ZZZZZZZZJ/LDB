@@ -21,7 +21,15 @@ We provide three datasets:
 
 # Get Started
 
-## Generate Clutter Images
+1. Generate Clutter Images based on Background Images;
+```
+Tools/make_annotations.m
+```
+2. Train DnCNN Network to Obtain Multiple Scene-specific Clutter Prediction Networks;
+```
+sadf
+```
+
 
 
 # Citation
