@@ -1,4 +1,4 @@
-addpath(genpath('/xxx/generateCL'));
+addpath(genpath('/xxx/Tools/generateCL'));
 %Config
 datanamelist  = str2mat('canoe','boats','fall','fountain01','fountain02','overpass','blizzard','skating','snowFall','wetSnow');
 
