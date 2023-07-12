@@ -25,7 +25,7 @@ We provide three datasets:
 ```
 Tools/make_annotations.m
 ```
-2. Train DnCNN Network to Obtain Multiple Scene-specific Clutter Prediction Networks;
+2. Train DnCNN Network to Obtain Multiple Scene-Specific Clutter Prediction Networks;
 ```
 sadf
 ```
