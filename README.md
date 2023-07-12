@@ -21,7 +21,7 @@ We provide three datasets:
 
 # Get Started
 
-1. Generate Clutter Images based on Background Images;
+1. Generate Clutter Images using Scene Background Images;
 ```
 Tools/make_annotations.m
 ```
