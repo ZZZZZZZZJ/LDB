@@ -1,4 +1,4 @@
-addpath(genpath('/home/sdb/zhangzhijun/codes/CD/low-rank/generatePatchForVideo/generateCL'));
+addpath(genpath('/xxx/generateCL'));
 %Config
 datanamelist  = str2mat('canoe','boats','fall','fountain01','fountain02','overpass','blizzard','skating','snowFall','wetSnow');
 
