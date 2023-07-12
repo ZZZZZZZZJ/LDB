@@ -21,6 +21,9 @@ We provide three datasets:
 
 # Get Started
 
+## Generate Clutter Images
+
+
 # Citation
 ```
 @article{zhang2022learning,
