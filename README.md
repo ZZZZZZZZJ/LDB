@@ -36,7 +36,9 @@ DnCNN-PyTorch-two-branch/test.py
 4. Use LDB Method Towards Optimization with Trained Clutter Images;
 ```
 Algorithms_libs/LDB/test_LDB.m
-OR
+```
+Or
+```
 test_videos.m
 ```
 
