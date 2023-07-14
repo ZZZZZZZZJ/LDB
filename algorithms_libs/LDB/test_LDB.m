@@ -71,7 +71,7 @@ datanamelist     = str2mat('Campus','Campus','Campus','Campus','Campus','Campus'
 
 num_task = size(frame_idx,1);
 
-CNNDir = '/home/sdb/xxx/codes/CD/low-rank/DnCNN-PyTorch/test';
+CNNDir = '/home/sdb/xxx/codes/CD/low-rank/DnCNN-PyTorch-two-branch/test';
 
 tasks = [8,14,17,18];
 output_time = [0,0,0,0];
