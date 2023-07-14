@@ -27,13 +27,15 @@ Tools/make_annotations.m
 ```
 2. Train DnCNN Network to Obtain Scene-Specific Clutter Prediction Networks;
    
-(1) Modify the path in line 103 of the DnCNN-PyTorch-two-branch/train.py
+    (1) Modify the path in line 103 of the DnCNN-PyTorch-two-branch/train.py
 
-(2) Modify the path in lines 66-68 of the DnCNN-PyTorch-two-branch/dataset.py
+    (2) Modify the path in lines 66-68 of the DnCNN-PyTorch-two-branch/dataset.py
 ```
 DnCNN-PyTorch-two-branch/train.py
 ```
 3. Generate Clutter Images of Testing Images based on the Training Network;
+
+   Modify the path in line 103 of the DnCNN-PyTorch-two-branch/test.py
 ```
 DnCNN-PyTorch-two-branch/test.py
 ```
@@ -41,7 +43,7 @@ DnCNN-PyTorch-two-branch/test.py
 ```
 Algorithms_libs/LDB/test_LDB.m
 ```
-Or
+    Or
 ```
 test_videos.m
 ```
