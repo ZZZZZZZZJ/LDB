@@ -26,8 +26,10 @@ We provide three datasets:
 Tools/make_annotations.m
 ```
 2. Train DnCNN Network to Obtain Scene-Specific Clutter Prediction Networks;
+   
 (1) Modify the path in line 103 of the DnCNN-PyTorch-two-branch/train.py
-(2) Modify the path in line 66-68 of the DnCNN-PyTorch-two-branch/dataset.py
+
+(2) Modify the path in lines 66-68 of the DnCNN-PyTorch-two-branch/dataset.py
 ```
 DnCNN-PyTorch-two-branch/train.py
 ```
