@@ -25,9 +25,21 @@ We provide three datasets:
 ```
 Tools/make_annotations.m
 ```
-2. Train DnCNN Network to Obtain Multiple Scene-Specific Clutter Prediction Networks;
+2. Train DnCNN Network to Obtain Scene-Specific Clutter Prediction Networks;
 ```
-sadf
+DnCNN-PyTorch-two-branch/train.py
+```
+3. Generate Clutter Images of Testing Images based on the Training Network;
+```
+DnCNN-PyTorch-two-branch/test.py
+```
+4. Use LDB Method Towards Optimization with Trained Clutter Images;
+```
+Algorithms_libs/LDB/test_LDB.m
+```
+Or
+```
+test_videos.m
 ```
 
 
