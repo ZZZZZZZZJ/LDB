@@ -34,8 +34,6 @@ Tools/make_annotations.m
 DnCNN-PyTorch-two-branch/train.py
 ```
 3. Generate Clutter Images of Testing Images based on the Training Network;
-
-   Modify the path in line 103 of the DnCNN-PyTorch-two-branch/test.py
 ```
 DnCNN-PyTorch-two-branch/test.py
 ```
